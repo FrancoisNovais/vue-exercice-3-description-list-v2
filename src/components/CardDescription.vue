@@ -6,7 +6,8 @@ import ThirdParagraph from './ThirdParagraph.vue'
 
 // -- Définition des 'props'
 const props = defineProps({
-  personInfos: Object
+  personInfos: Object,
+  shadowColor: String
 })
 </script>
 
@@ -46,7 +47,7 @@ section {
   padding: 15px;
   height: 500px;
   background-color: #efeeee;
-  box-shadow: 0 0 7px grey;
+  box-shadow: 0 0 7px v-bind(shadowColor);
 }
 section > div {
   flex: 1;
@@ -66,6 +67,9 @@ svg {
   font-size: 26px;
   color: grey;
   cursor: pointer;
+}
+svg:hover {
+  color: #000000;
 }
 h2 {
   font-weight: bold;
