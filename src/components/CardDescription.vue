@@ -6,11 +6,9 @@ import ThirdParagraph from './ThirdParagraph.vue'
 
 // -- Définition des 'props'
 const props = defineProps({
-  personInfos: Object,
-  shadowColor: String
+  personInfos: Object
 })
 // console.log(props.personInfos)
-console.log(props.shadowColor)
 </script>
 
 <template>
@@ -53,7 +51,7 @@ section {
   padding: 15px;
   height: 500px;
   background-color: #efeeee;
-  box-shadow: 0 0 7px v-bind(shadowColor);
+  box-shadow: 0 0 7px v-bind(personInfos.favoriteColor);
 }
 section > div {
   flex: 1;

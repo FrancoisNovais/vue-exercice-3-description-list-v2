@@ -66,28 +66,16 @@ const personsList = [
     <h1>Description list</h1>
     <div>
       <div>
-        <CardDescription
-          :shadowColor="personsList[0].favoriteColor"
-          :personInfos="personsList[0]"
-        />
+        <CardDescription :personInfos="personsList[0]" />
       </div>
       <div>
-        <CardDescription
-          :shadowColor="personsList[1].favoriteColor"
-          :personInfos="personsList[1]"
-        />
+        <CardDescription :personInfos="personsList[1]" />
       </div>
       <div>
-        <CardDescription
-          :shadowColor="personsList[2].favoriteColor"
-          :personInfos="personsList[2]"
-        />
+        <CardDescription :personInfos="personsList[2]" />
       </div>
       <div>
-        <CardDescription
-          :shadowColor="personsList[3].favoriteColor"
-          :personInfos="personsList[3]"
-        />
+        <CardDescription :personInfos="personsList[3]" />
       </div>
     </div>
   </main>
