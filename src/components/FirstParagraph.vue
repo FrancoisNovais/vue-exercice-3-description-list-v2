@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <p>test</p>
+  <p>FirstParagraph</p>
 </template>
 
 <style scoped></style>

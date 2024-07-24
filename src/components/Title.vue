@@ -1,7 +1,19 @@
-<script setup></script>
+<script setup>
+// -- Définition des 'props'
+const props = defineProps({
+  firstName: String,
+  lastName: String
+})
+</script>
 
 <template>
-  <p>test</p>
+  <h2>{{ firstName }} {{ lastName }}</h2>
 </template>
 
-<style scoped></style>
+<style scoped>
+h2 {
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+}
+</style>

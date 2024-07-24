@@ -63,7 +63,12 @@ const personsList = [
 <template>
   <main>
     <h1>Description list</h1>
-    <CardDescription />
+    <div>
+      <div><CardDescription :personInfos="personsList[0]" /></div>
+      <div><CardDescription :personInfos="personsList[1]" /></div>
+      <div><CardDescription :personInfos="personsList[2]" /></div>
+      <div><CardDescription :personInfos="personsList[3]" /></div>
+    </div>
   </main>
 </template>
 
@@ -73,7 +78,13 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: #c9e1c2;
-  min-height: 100vh;
+  height: 100vh;
   padding: 50px;
+}
+main > div {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 20px;
 }
 </style>

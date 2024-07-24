@@ -1,8 +1,13 @@
 <script setup>
 import Title from './Title.vue'
-import FirstParagraph from './FirstParagraph.vue'
-import SecondParagraph from './SecondParagraph.vue'
-import ThirdParagraph from './ThirdParagraph.vue'
+// import FirstParagraph from './FirstParagraph.vue'
+// import SecondParagraph from './SecondParagraph.vue'
+// import ThirdParagraph from './ThirdParagraph.vue'
+
+// -- Définition des 'props'
+const props = defineProps({
+  personInfos: Object
+})
 </script>
 
 <template>
@@ -13,10 +18,10 @@ import ThirdParagraph from './ThirdParagraph.vue'
     />
 
     <div>
-      <Title />
-      <FirstParagraph />
+      <Title :firstName="personInfos.firstname" :lastName="personInfos.lastname" />
+      <!-- <FirstParagraph />
       <SecondParagraph />
-      <ThirdParagraph />
+      <ThirdParagraph /> -->
     </div>
 
     <font-awesome-icon :icon="['fas', 'heart']" />
@@ -45,10 +50,7 @@ img {
   object-position: top;
   border-radius: 5px;
 }
-p {
-  line-height: 20px;
-  margin: 5px 0;
-}
+
 svg {
   /* Permet au coeur d'avoir un alignement différent des autres éléments */
   align-self: flex-end;
