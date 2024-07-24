@@ -4,6 +4,8 @@ const props = defineProps({
   firstName: String,
   lastName: String
 })
+// console.log(props.firstName)
+// console.log(props.lastName)
 </script>
 
 <template>

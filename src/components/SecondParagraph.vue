@@ -5,6 +5,9 @@ const props = defineProps({
   firstHobbie: String,
   secondHobbie: String
 })
+// console.log(props.firstName)
+// console.log(props.firstHobbie)
+// console.log(props.secondHobbie)
 </script>
 
 <template>

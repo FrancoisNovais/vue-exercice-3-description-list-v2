@@ -106,4 +106,20 @@ main > div {
   flex: 1;
   gap: 20px;
 }
+/* -------------------------------- */
+/* -- MEDIA QUERIES --------------- */
+/* -------------------------------- */
+@media (max-width: 1250px) {
+  main {
+    padding: 30px;
+  }
+  main > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section {
+    flex: none;
+    width: 300px;
+  }
+}
 </style>

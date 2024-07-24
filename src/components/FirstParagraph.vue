@@ -5,6 +5,9 @@ const props = defineProps({
   age: Number,
   job: String
 })
+// console.log(props.gender)
+// console.log(props.age)
+// console.log(props.job)
 </script>
 
 <template>

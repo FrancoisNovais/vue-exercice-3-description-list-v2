@@ -12,3 +12,21 @@ h1 {
   margin: 40px;
   color: white;
 }
+/* -------------------------------- */
+/* -- MEDIA QUERIES --------------- */
+/* -------------------------------- */
+@media (max-width: 1250px) {
+  h1 {
+    font-size: 50px;
+    margin: 20px 0 50px 0;
+  }
+}
+
+@media (max-width: 694px) {
+  h1 {
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: 20px 0 50px 0;
+  }
+}

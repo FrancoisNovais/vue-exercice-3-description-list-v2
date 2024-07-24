@@ -6,6 +6,10 @@ const props = defineProps({
   petAge: Number,
   petSpecies: String
 })
+// console.log(props.gender)
+// console.log(props.petName)
+// console.log(props.petAge)
+// console.log(props.petSpecies)
 </script>
 
 <template>

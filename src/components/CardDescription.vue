@@ -9,6 +9,8 @@ const props = defineProps({
   personInfos: Object,
   shadowColor: String
 })
+// console.log(props.personInfos)
+console.log(props.shadowColor)
 </script>
 
 <template>
@@ -58,15 +60,12 @@ section > div {
 }
 img {
   width: 100%;
-  /* Détermine la hauteur automatiquement de manière à respecter le ratio donné */
-  aspect-ratio: 16/10;
   object-fit: cover;
   object-position: top;
   border-radius: 5px;
 }
 
 svg {
-  /* Permet au coeur d'avoir un alignement différent des autres éléments */
   align-self: flex-end;
   font-size: 26px;
   color: grey;
