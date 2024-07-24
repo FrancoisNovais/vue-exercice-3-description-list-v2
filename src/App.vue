@@ -87,4 +87,9 @@ main > div {
   flex: 1;
   gap: 20px;
 }
+p {
+  line-height: 18px;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
 </style>

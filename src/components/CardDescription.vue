@@ -1,6 +1,6 @@
 <script setup>
 import Title from './Title.vue'
-// import FirstParagraph from './FirstParagraph.vue'
+import FirstParagraph from './FirstParagraph.vue'
 // import SecondParagraph from './SecondParagraph.vue'
 // import ThirdParagraph from './ThirdParagraph.vue'
 
@@ -19,9 +19,9 @@ const props = defineProps({
 
     <div>
       <Title :firstName="personInfos.firstname" :lastName="personInfos.lastname" />
-      <!-- <FirstParagraph />
+      <FirstParagraph :gender="personInfos.gender" :age="personInfos.age" :job="personInfos.job" />
       <SecondParagraph />
-      <ThirdParagraph /> -->
+      <ThirdParagraph />
     </div>
 
     <font-awesome-icon :icon="['fas', 'heart']" />
@@ -57,5 +57,14 @@ svg {
   font-size: 26px;
   color: grey;
   cursor: pointer;
+}
+h2 {
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+}
+p {
+  line-height: 18px;
+  padding-bottom: 5px;
 }
 </style>
