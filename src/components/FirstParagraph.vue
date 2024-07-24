@@ -10,5 +10,3 @@ const props = defineProps({
 <template>
   <p>{{ gender === 'female' ? 'She' : 'He' }} is a {{ age }}-year_old {{ job }}.</p>
 </template>
-
-<style scoped></style>

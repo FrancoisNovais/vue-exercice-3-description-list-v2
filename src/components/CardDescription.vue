@@ -2,7 +2,7 @@
 import Title from './Title.vue'
 import FirstParagraph from './FirstParagraph.vue'
 import SecondParagraph from './SecondParagraph.vue'
-// import ThirdParagraph from './ThirdParagraph.vue'
+import ThirdParagraph from './ThirdParagraph.vue'
 
 // -- Définition des 'props'
 const props = defineProps({
@@ -24,6 +24,12 @@ const props = defineProps({
         :firstName="personInfos.firstname"
         :firstHobbie="personInfos.hobbies[0]"
         :secondHobbie="personInfos.hobbies[1]"
+      />
+      <ThirdParagraph
+        :gender="personInfos.gender"
+        :petName="personInfos.pet.name"
+        :petAge="personInfos.pet.age"
+        :petSpecies="personInfos.pet.species"
       />
     </div>
 
