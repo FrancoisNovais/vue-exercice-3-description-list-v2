@@ -19,7 +19,11 @@ const props = defineProps({
     />
 
     <div>
-      <Title :firstName="personInfos.firstname" :lastName="personInfos.lastname" />
+      <Title
+        :class="personInfos.gender"
+        :firstName="personInfos.firstname"
+        :lastName="personInfos.lastname"
+      />
       <FirstParagraph :gender="personInfos.gender" :age="personInfos.age" :job="personInfos.job" />
       <SecondParagraph
         :firstName="personInfos.firstname"
@@ -75,6 +79,9 @@ h2 {
   font-weight: bold;
   margin: 20px 0 10px 0;
   font-size: 18px;
+}
+.female {
+  color: orange;
 }
 p {
   line-height: 18px;
