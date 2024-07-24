@@ -1,7 +1,12 @@
-<script setup></script>
+<script setup>
+// -- Définition des 'props'
+const props = defineProps({
+  firstName: String,
+  firstHobbie: String,
+  secondHobbie: String
+})
+</script>
 
 <template>
-  <p>SecondParagraph</p>
+  <p>Outside of work, {{ firstName }} likes to {{ firstHobbie }} and {{ secondHobbie }}.</p>
 </template>
-
-<style scoped></style>

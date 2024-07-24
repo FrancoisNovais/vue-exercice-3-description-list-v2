@@ -1,7 +1,7 @@
 <script setup>
 import Title from './Title.vue'
 import FirstParagraph from './FirstParagraph.vue'
-// import SecondParagraph from './SecondParagraph.vue'
+import SecondParagraph from './SecondParagraph.vue'
 // import ThirdParagraph from './ThirdParagraph.vue'
 
 // -- Définition des 'props'
@@ -20,8 +20,11 @@ const props = defineProps({
     <div>
       <Title :firstName="personInfos.firstname" :lastName="personInfos.lastname" />
       <FirstParagraph :gender="personInfos.gender" :age="personInfos.age" :job="personInfos.job" />
-      <SecondParagraph />
-      <ThirdParagraph />
+      <SecondParagraph
+        :firstName="personInfos.firstname"
+        :firstHobbie="personInfos.hobbies[0]"
+        :secondHobbie="personInfos.hobbies[1]"
+      />
     </div>
 
     <font-awesome-icon :icon="['fas', 'heart']" />
